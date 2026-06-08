@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samar Agneev — Cybersecurity & Ethical Hacker</title>
+
+  <!-- Google Fonts — Nunito & JetBrains Mono -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════════════════════
+     PAGE LOADER — Initial Load Animation
+════════════════════════════════════════════════════════════════════════════ -->
+<div class="page-loader" id="loader">
+  <div class="loader-orbs">
+    <div class="lo"></div>
+    <div class="lo"></div>
+    <div class="lo"></div>
+    <div class="lo"></div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════════════════════
+     CUSTOM CURSOR — Morphing Interactive Pointer
+════════════════════════════════════════════════════════════════════════════ -->
+<div class="cur"       id="cur"></div>
+<div class="cur-trail" id="curT"></div>
+
+<!-- ════════════════════════════════════════════════════════════════════════════
+     NAVIGATION BAR
+════════════════════════════════════════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#" class="n-logo">✦ Samar.</a>
+
+  <ul class="n-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <a href="#contact" class="n-cta">Hire Me →</a>
+</nav>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════════
+     ① HERO SECTION — Primary Introduction & Call-to-Action
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="hero">
+
+  <div class="hero-glow1"></div>
+  <div class="hero-glow2"></div>
+
+  <!-- Floating orbs -->
+  <div class="orb orb-xl  orb-green"  style="top:80px;     right:50px;  animation:f2 7s ease-in-out infinite, glow2 4s ease-in-out infinite"></div>
+  <div class="orb orb-md  orb-peach"  style="top:180px;    right:180px; animation:f1 5s ease-in-out infinite 1s"></div>
+  <div class="orb orb-sm  orb-orange" style="top:280px;    left:50%;    animation:f3 6s ease-in-out infinite 2s"></div>
+  <div class="orb orb-xs  orb-mint"   style="bottom:160px; right:300px; animation:f5 8s ease-in-out infinite 0.5s"></div>
+  <div class="orb orb-sm  orb-sky"    style="bottom:220px; left:55%;    animation:f4 9s ease-in-out infinite 3s"></div>
+  <div class="orb orb-xs  orb-cream"  style="top:140px;    left:52%;    animation:f6 7s ease-in-out infinite 1.5s"></div>
+
+  <!-- Left — Text Content -->
+  <div class="hero-left">
+    <div class="h-tag">
+      <div class="dot"></div>
+      <span>Available for work</span>
+    </div>
+
+    <h1 class="h-name">
+      Hi, I'm<br>
+      <span class="accent">Samar</span><br>
+      Agneev.
+    </h1>
+
+    <p class="h-role">// Cybersecurity & Ethical Hacker<span class="blink">_</span></p>
+
+    <p class="h-desc">
+      Dedicated to cybersecurity and ethical hacking. I focus on identifying vulnerabilities,
+      securing web applications, and understanding system security from both offensive and
+      defensive perspectives. Passionate about digital protection and continuous learning.
+    </p>
+
+    <div class="h-btns">
+      <a href="#projects" class="btn-dark">View Projects →</a>
+      <a href="#contact"  class="btn-soft">Let's Talk</a>
+    </div>
+
+    <div class="h-pills">
+      <span class="pill">Cybersecurity</span>
+      <span class="pill">Python</span>
+      <span class="pill">JavaScript</span>
+      <span class="pill">Linux</span>
+      <span class="pill">Web Security</span>
+      <span class="pill">Ethical Hacking</span>
+    </div>
+  </div>
+
+  <!-- Right — Floating Cards -->
+  <div class="hero-right">
+
+    <div class="hbadge hb1">
+      <div class="hbi">⚡</div>
+      <div>
+        <div class="hbv">15+ Repos</div>
+        <div class="hbs">On GitHub</div>
+      </div>
+    </div>
+
+    <div class="hc hc-main tilt3d">
+      <div class="hc-main-t">Security<br>Focused.</div>
+      <p class="hc-main-b">
+        Identifying vulnerabilities and securing digital systems —
+        from web applications to network infrastructure.
+      </p>
+      <a href="#projects" class="btn-orange">Explore Work →</a>
+    </div>
+
+    <div class="hc hc-green tilt3d">
+      <div class="hc-green-lbl">Tech Stack</div>
+      <div class="hc-green-t">Python · JavaScript<br>Linux · Web Security</div>
+      <p class="hc-green-b">
+        Cybersecurity enthusiast with skills in offensive and defensive security,
+        web application testing, and network security fundamentals.
+      </p>
+      <div class="hc-green-dots">
+        <div class="gd gda"></div>
+        <div class="gd"></div>
+        <div class="gd"></div>
+        <div class="gd"></div>
+      </div>
+    </div>
+
+    <div class="hbadge hb2">
+      <div class="hbi">🚀</div>
+      <div>
+        <div class="hbv">Security Driven</div>
+        <div class="hbs">Learning Continuously</div>
+      </div>
+    </div>
+
+    <div class="hc hc-stats tilt3d">
+      <div class="hcs-lbl">Quick Stats</div>
+      <div class="hcs-row">
+        <div class="hcs-nums">
+          <div><div class="hsv">41</div><div class="hsk">Contributions</div></div>
+          <div><div class="hsv">15+</div><div class="hsk">Repositories</div></div>
+          <div><div class="hsv">0</div><div class="hsk">Followers</div></div>
+        </div>
+        <div class="hcs-orb">💻</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════════
+     MARQUEE TICKER — Animated Technology Stack Showcase
+════════════════════════════════════════════════════════════════════════════ -->
+<div class="mq-wrap">
+  <div class="mq-t">
+    <span class="mi">HTML5       <span class="ms">◆</span></span>
+    <span class="mi">CSS3        <span class="ms">◆</span></span>
+    <span class="mi">JavaScript  <span class="ms">◆</span></span>
+    <span class="mi">React       <span class="ms">◆</span></span>
+    <span class="mi">Node.js     <span class="ms">◆</span></span>
+    <span class="mi">Express     <span class="ms">◆</span></span>
+    <span class="mi">Python      <span class="ms">◆</span></span>
+    <span class="mi">Linux       <span class="ms">◆</span></span>
+    <span class="mi">Ethical Hacking <span class="ms">◆</span></span>
+    <span class="mi">Web Security <span class="ms">◆</span></span>
+    <span class="mi">Cybersecurity <span class="ms">◆</span></span>
+    <span class="mi">Git & GitHub <span class="ms">◆</span></span>
+    <span class="mi">VS Code     <span class="ms">◆</span></span>
+    <span class="mi">Chrome DevTools <span class="ms">◆</span></span>
+    <!-- Duplicate for seamless loop -->
+    <span class="mi">Python      <span class="ms">◆</span></span>
+    <span class="mi">Linux       <span class="ms">◆</span></span>
+    <span class="mi">Ethical Hacking <span class="ms">◆</span></span>
+    <span class="mi">Web Security <span class="ms">◆</span></span>
+    <span class="mi">Cybersecurity <span class="ms">◆</span></span>
+    <span class="mi">Git & GitHub <span class="ms">◆</span></span>
+    <span class="mi">VS Code     <span class="ms">◆</span></span>
+    <span class="mi">Chrome DevTools <span class="ms">◆</span></span>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════════
+     ② ABOUT SECTION — Professional Background & Expertise Overview
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="about">
+
+  <div class="ab-blob"></div>
+
+  <div class="orb orb-lg  orb-sky"      style="top:40px;    left:40px;   animation:f4 8s ease-in-out infinite"></div>
+  <div class="orb orb-sm  orb-orange"   style="top:120px;   right:100px; animation:f1 5s ease-in-out infinite 1s"></div>
+  <div class="orb orb-md  orb-cream"    style="bottom:60px; left:200px;  animation:f3 7s ease-in-out infinite 2s"></div>
+  <div class="orb orb-xs  orb-mint"     style="bottom:120px;right:200px; animation:f6 9s ease-in-out infinite 0.5s"></div>
+  <div class="orb orb-xs  orb-peach"    style="top:200px;   left:300px;  animation:f2 6s ease-in-out infinite 3s"></div>
+  <div class="orb orb-sm  orb-lavender" style="bottom:180px;right:80px;  animation:f5 8s ease-in-out infinite 1.5s"></div>
+
+  <div>
+    <p class="sec-lbl lbl-b rev d1">Who I Am</p>
+    <h2 class="sec-h rev d2">
+      Dedicated to Cyber<br>
+      <em class="em-b">Security</em><br>
+      Excellence
+    </h2>
+    <p class="ab-txt rev d3">
+      I'm Samar Agneev, a cybersecurity enthusiast and ethical hacker passionate about
+      protecting digital systems and identifying vulnerabilities. I focus on understanding
+      system security from both offensive and defensive perspectives to solve real-world
+      security challenges.
+    </p>
+    <p class="ab-txt rev d4">
+      With expertise in web application security, network security fundamentals, and ethical hacking,
+      I'm constantly expanding my knowledge in modern security technologies and best practices. I enjoy
+      exploring vulnerabilities and building secure systems for a better digital future.
+    </p>
+
+    <!-- Quick Info Row -->
+    <div class="ab-info-row rev d5">
+      <div class="ab-info-item"><span class="ab-info-icon">👤</span><span><strong>Name:</strong> Samar Agneev</span></div>
+      <div class="ab-info-item"><span class="ab-info-icon">💼</span><span><strong>Role:</strong> Ethical Hacker</span></div>
+      <div class="ab-info-item"><span class="ab-info-icon">📍</span><span><strong>Location:</strong> India</span></div>
+      <div class="ab-info-item"><span class="ab-info-icon">🗣️</span><span><strong>Languages:</strong> Hindi, English</span></div>
+    </div>
+
+    <div class="ab-cards">
+      <div class="ab-c ab-cw rev d2"><span class="ab-ic">🔐</span><div class="ab-ct">Web Security</div><div class="ab-cd">Application vulnerability testing</div></div>
+      <div class="ab-c ab-cb rev d3"><span class="ab-ic">🐍</span><div class="ab-ct">Python Expert</div><div class="ab-cd">Security scripts &amp; automation</div></div>
+      <div class="ab-c ab-cb rev d4"><span class="ab-ic">🐧</span><div class="ab-ct">Linux Proficient</div><div class="ab-cd">System security &amp; configurations</div></div>
+      <div class="ab-c ab-cw rev d5"><span class="ab-ic">📚</span><div class="ab-ct">Continuous Learner</div><div class="ab-cd">Always exploring, always securing</div></div>
+    </div>
+  </div>
+
+  <!-- Code Window -->
+  <div class="code-win rev-r d2" id="codeWin">
+    <div class="cw-top">
+      <div class="cwb cwr"></div>
+      <div class="cwb cwy"></div>
+      <div class="cwb cwg"></div>
+      <span class="cw-fn">developer.config.js</span>
+    </div>
+    <div class="cw-body" id="codeBody">
+      <div class="type-line"><span class="ck">const</span> <span class="cf">hacker</span> <span class="cp">=</span> <span class="cp">{</span></div>
+      <div class="type-line">&nbsp;&nbsp;<span class="cs">"name"</span><span class="cp">:</span> <span class="cn">"Samar Agneev"</span><span class="cp">,</span></div>
+      <div class="type-line">&nbsp;&nbsp;<span class="cs">"role"</span><span class="cp">:</span> <span class="cn">"Ethical Hacker"</span><span class="cp">,</span></div>
+      <div class="type-line">&nbsp;&nbsp;<span class="cs">"location"</span><span class="cp">:</span> <span class="cn">"India"</span><span class="cp">,</span></div>
+      <div class="type-line">&nbsp;&nbsp;<span class="cs">"security"</span><span class="cp">:</span> <span class="cp">[</span><span class="cn">"Python"</span><span class="cp">,</span> <span class="cn">"Web Security"</span><span class="cp">,</span> <span class="cn">"Penetration Testing"</span><span class="cp">],</span></div>
+      <div class="type-line">&nbsp;&nbsp;<span class="cs">"tools"</span><span class="cp">:</span> <span class="cp">[</span><span class="cn">"Linux"</span><span class="cp">,</span> <span class="cn">"GitHub"</span><span class="cp">,</span> <span class="cn">"VS Code"</span><span class="cp">],</span></div>
+      <div class="type-line">&nbsp;&nbsp;<span class="cs">"learning"</span><span class="cp">:</span> <span class="ck">true</span><span class="cp">,</span></div>
+      <div class="type-line">&nbsp;&nbsp;<span class="cc">// Securing systems & Learning continuously! 🔐</span></div>
+      <div class="type-line"><span class="cp">};</span></div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════════
+     ③ SKILLS SECTION — Technical Proficiency & Competency Matrix
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="skills">
+
+  <div class="orb orb-xxl orb-cream"    style="top:-60px;   right:-60px;  animation:f1 15s ease-in-out infinite; opacity:0.5"></div>
+  <div class="orb orb-lg  orb-orange"   style="top:60px;    left:60px;    animation:f2 7s  ease-in-out infinite"></div>
+  <div class="orb orb-md  orb-sky"      style="bottom:80px; left:120px;   animation:f4 8s  ease-in-out infinite 2s"></div>
+  <div class="orb orb-sm  orb-pink"     style="bottom:140px;right:160px;  animation:f6 6s  ease-in-out infinite 1s"></div>
+  <div class="orb orb-xs  orb-peach"    style="top:180px;   left:45%;     animation:f5 9s  ease-in-out infinite 3s"></div>
+  <div class="orb orb-xs  orb-lavender" style="top:250px;   right:280px;  animation:f3 7s  ease-in-out infinite 0.5s"></div>
+  <div class="orb orb-sm  orb-mint"     style="bottom:200px;right:400px;  animation:f8 10s ease-in-out infinite 2s"></div>
+
+  <div class="sk-head">
+    <p class="sec-lbl lbl-g rev d1" style="justify-content:center">What I Know</p>
+    <h2 class="sec-h rev d2">Technical <em class="em-g">Skills</em></h2>
+  </div>
+
+  <div class="sk-grid">
+    <div class="sk-c rev d1"><span class="sk-em">🐍</span><div class="sk-nm">Python</div><div class="sk-lv">Security Scripts</div><div class="sk-bar"><div class="sk-f sf-o" style="width:0" data-w="85%"></div></div><div class="sk-toggle"><div class="tg-dot"></div>Advanced</div></div>
+    <div class="sk-c rev d2"><span class="sk-em">🟡</span><div class="sk-nm">JavaScript</div><div class="sk-lv">Web Security Testing</div><div class="sk-bar"><div class="sk-f sf-g" style="width:0" data-w="80%"></div></div><div class="sk-toggle"><div class="tg-dot"></div>Advanced</div></div>
+    <div class="sk-c rev d3"><span class="sk-em">🔐</span><div class="sk-nm">Web Security</div><div class="sk-lv">Vulnerability Assessment</div><div class="sk-bar"><div class="sk-f sf-b" style="width:0" data-w="80%"></div></div><div class="sk-toggle"><div class="tg-dot"></div>Intermediate</div></div>
+    <div class="sk-c rev d4"><span class="sk-em">🐧</span><div class="sk-nm">Linux</div><div class="sk-lv">System Security</div><div class="sk-bar"><div class="sk-f sf-o" style="width:0" data-w="78%"></div></div><div class="sk-toggle"><div class="tg-dot"></div>Intermediate</div></div>
+    <div class="sk-c rev d2"><span class="sk-em">🎯</span><div class="sk-nm">Ethical Hacking</div><div class="sk-lv">Penetration Testing</div><div class="sk-bar"><div class="sk-f sf-g" style="width:0" data-w="72%"></div></div><div class="sk-toggle"><div class="tg-dot"></div>Intermediate</div></div>
+    <div class="sk-c rev d3"><span class="sk-em">🌐</span><div class="sk-nm">HTML & CSS</div><div class="sk-lv">Frontend Security</div><div class="sk-bar"><div class="sk-f sf-b" style="width:0" data-w="82%"></div></div><div class="sk-toggle"><div class="tg-dot"></div>Advanced</div></div>
+    <div class="sk-c rev d4"><span class="sk-em">🐙</span><div class="sk-nm">Git & GitHub</div><div class="sk-lv">Version Control</div><div class="sk-bar"><div class="sk-f sf-o" style="width:0" data-w="80%"></div></div><div class="sk-toggle"><div class="tg-dot"></div>Advanced</div></div>
+    <div class="sk-c rev d5"><span class="sk-em">🛠️</span><div class="sk-nm">Network Security</div><div class="sk-lv">Security Fundamentals</div><div class="sk-bar"><div class="sk-f sf-g" style="width:0" data-w="70%"></div></div><div class="sk-toggle"><div class="tg-dot"></div>Intermediate</div></div>
+  </div>
+
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════════
+     ④ EXPERIENCE SECTION — Professional Journey & Career Timeline
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="experience">
+
+  <div class="orb orb-xl  orb-peach"  style="top:60px;    right:80px;  animation:f3 8s  ease-in-out infinite"></div>
+  <div class="orb orb-md  orb-green"  style="top:200px;   left:60px;   animation:f1 6s  ease-in-out infinite 2s"></div>
+  <div class="orb orb-lg  orb-cream"  style="bottom:60px; left:40px;   animation:f4 9s  ease-in-out infinite 0.5s; opacity:0.7"></div>
+  <div class="orb orb-sm  orb-orange" style="bottom:180px;right:240px; animation:f6 7s  ease-in-out infinite 3s"></div>
+  <div class="orb orb-xs  orb-sky"    style="top:280px;   right:180px; animation:f5 8s  ease-in-out infinite 1s"></div>
+  <div class="orb orb-xs  orb-pink"   style="top:150px;   left:300px;  animation:f2 10s ease-in-out infinite 2.5s"></div>
+
+  <div class="rev">
+    <p class="sec-lbl lbl-o">My Journey</p>
+    <h2 class="sec-h">Learning &amp; <em class="em-o">Growth</em></h2>
+  </div>
+
+  <div class="exp-w">
+
+    <div class="exp-list rev d1">
+      <div class="exp-tab active" onclick="selectExperienceTab(0)">
+        <div class="et-co">Web Developer</div>
+        <div class="et-role">Frontend & Full Stack</div>
+        <div class="et-yr">2024 – 2026 · Completed</div>
+      </div>
+      <div class="exp-tab" onclick="selectExperienceTab(1)">
+        <div class="et-co">Ethical Hacking</div>
+        <div class="et-role">Cybersecurity</div>
+        <div class="et-yr">2026 – Present · Active</div>
+      </div>
+    </div>
+
+    <div class="exp-dp rev-r d2" id="epanel">
+      <div class="edp-co">Web Developer</div>
+      <div class="edp-role">// Frontend & Full Stack</div>
+      <div class="edp-per">📅 2024 – 2026 · Completed</div>
+      <p class="edp-desc">
+        Built multiple real-world web projects focusing on responsive design and modern web technologies. Created beautiful, functional websites from concept to deployment with clean, maintainable code.
+      </p>
+      <ul class="edp-ul">
+        <li>Built Auraa — fully responsive e-commerce website deployed on Netlify</li>
+        <li>Designed and developed Coffee Website with modern dark theme and smooth animations (3⭐ on GitHub)</li>
+        <li>Created Restaurant Web — open-source project with clean UI/UX for frontend practice</li>
+        <li>Mastered HTML5, CSS3, JavaScript, React, jQuery with responsive mobile-first design</li>
+      </ul>
+      <div class="edp-pills">
+        <span class="edp-pill">HTML5</span>
+        <span class="edp-pill">CSS3</span>
+        <span class="edp-pill">JavaScript</span>
+        <span class="edp-pill">React</span>
+        <span class="edp-pill">jQuery</span>
+        <span class="edp-pill">Netlify</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════════
+     ⑤ PROJECTS SECTION — Portfolio of Completed Work & Case Studies
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="projects">
+
+  <div class="orb orb-lg  orb-mint"     style="top:50px;    left:60px;   animation:f2 7s  ease-in-out infinite"></div>
+  <div class="orb orb-md  orb-orange"   style="top:150px;   right:100px; animation:f4 6s  ease-in-out infinite 1s"></div>
+  <div class="orb orb-xl  orb-sky"      style="bottom:-40px;right:-40px; animation:f1 12s ease-in-out infinite; opacity:0.5"></div>
+  <div class="orb orb-sm  orb-peach"    style="bottom:180px;left:200px;  animation:f6 8s  ease-in-out infinite 2s"></div>
+  <div class="orb orb-xs  orb-lavender" style="top:230px;   left:400px;  animation:f5 9s  ease-in-out infinite 0.5s"></div>
+  <div class="orb orb-xs  orb-pink"     style="bottom:120px;right:350px; animation:f3 7s  ease-in-out infinite 3s"></div>
+
+  <div class="rev" style="text-align:center">
+    <p class="sec-lbl lbl-m" style="justify-content:center">My Work</p>
+    <h2 class="sec-h">Featured <em class="em-m">Projects</em></h2>
+  </div>
+
+  <div class="pj-grid">
+
+    <!-- Project 1 — Coffee Website (most popular: 3⭐, 6 forks) -->
+    <div class="pj-c rev d1">
+      <div class="pj-th" style="background:linear-gradient(135deg,#3d1f0a,#8b4513)">
+        <span class="pj-em">☕</span>
+        <div class="pj-ov">
+          <div class="pj-lr">
+            <a href="https://samar-agneev.github.io/Coffee-website/" target="_blank" class="pj-lk">Live →</a>
+            <a href="https://github.com/Samar-Agneev/Coffee-website" target="_blank" class="pj-lk">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="pj-info">
+        <div class="pj-type">UI Design · ⭐3 · 🍴7</div>
+        <div class="pj-nm">Coffee Website</div>
+        <p class="pj-ds">Artisan coffee website with a modern dark theme, smooth animations and premium cafe branding. Most starred project on GitHub.</p>
+        <div class="pj-stk">
+          <span class="pj-tg">HTML</span>
+          <span class="pj-tg">CSS</span>
+          <span class="pj-tg">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 — E-Commerce Website -->
+    <div class="pj-c rev d2">
+      <div class="pj-th" style="background:linear-gradient(135deg,#e8d0b8,#c8905a)">
+        <span class="pj-em">🛒</span>
+        <div class="pj-ov">
+          <div class="pj-lr">
+            <a href="https://e-commerce-auraa.netlify.app/" target="_blank" class="pj-lk">Live →</a>
+            <a href="https://github.com/Samar-Agneev/E-Commerce-Website" target="_blank" class="pj-lk">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="pj-info">
+        <div class="pj-type">E-Commerce · ⭐1</div>
+        <div class="pj-nm">Auraa — E-Commerce</div>
+        <p class="pj-ds">Mobile-responsive e-commerce site with product listing, cart UI, and order confirmation pages.</p>
+        <div class="pj-stk">
+          <span class="pj-tg">HTML</span>
+          <span class="pj-tg">CSS</span>
+          <span class="pj-tg">JavaScript</span>
+          <span class="pj-tg">jQuery</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 — Restaurant Website -->
+    <div class="pj-c rev d3">
+      <div class="pj-th" style="background:linear-gradient(135deg,#b8e8c8,#3a8a5a)">
+        <span class="pj-em">🍽️</span>
+        <div class="pj-ov">
+          <div class="pj-lr">
+            <a href="https://samar-agneev.github.io/Restaurant_Web/" target="_blank" class="pj-lk">Live →</a>
+            <a href="https://github.com/Samar-Agneev/Restaurant_Web" target="_blank" class="pj-lk">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="pj-info">
+        <div class="pj-type">Web Design · ⭐1</div>
+        <div class="pj-nm">Restaurant Web</div>
+        <p class="pj-ds">Responsive food website for frontend practice. Open-source beginner-friendly project with a clean, modern layout.</p>
+        <div class="pj-stk">
+          <span class="pj-tg">HTML</span>
+          <span class="pj-tg">CSS</span>
+          <span class="pj-tg">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 — JavaScript Projects Collection -->
+    <div class="pj-c rev d4">
+      <div class="pj-th" style="background:linear-gradient(135deg,#ffe066,#f0b800)">
+        <span class="pj-em">🧪</span>
+        <div class="pj-ov">
+          <div class="pj-lr">
+            <a href="https://github.com/Samar-Agneev/JavaScript_Projects" target="_blank" class="pj-lk">GitHub →</a>
+          </div>
+        </div>
+      </div>
+      <div class="pj-info">
+        <div class="pj-type">JS Practice · ⭐1</div>
+        <div class="pj-nm">JavaScript Projects</div>
+        <p class="pj-ds">A collection of mini projects built using HTML, CSS and JavaScript to practice DOM manipulation and core JS logic.</p>
+        <div class="pj-stk">
+          <span class="pj-tg">HTML</span>
+          <span class="pj-tg">CSS</span>
+          <span class="pj-tg">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5 — Calculator -->
+    <div class="pj-c rev d5">
+      <div class="pj-th" style="background:linear-gradient(135deg,#c8d0e8,#5060a8)">
+        <span class="pj-em">🔢</span>
+        <div class="pj-ov">
+          <div class="pj-lr">
+            <a href="https://samar-agneev.github.io/CALCULATOR/" target="_blank" class="pj-lk">Live →</a>
+            <a href="https://github.com/Samar-Agneev/CALCULATOR" target="_blank" class="pj-lk">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="pj-info">
+        <div class="pj-type">Mini App · ⭐1 · 🍴1</div>
+        <div class="pj-nm">Calculator</div>
+        <p class="pj-ds">Simple and responsive calculator web app built to practice core JS logic and DOM manipulation techniques.</p>
+        <div class="pj-stk">
+          <span class="pj-tg">HTML</span>
+          <span class="pj-tg">CSS</span>
+          <span class="pj-tg">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6 — WebNova Portfolio -->
+    <div class="pj-c rev d6">
+      <div class="pj-th" style="background:linear-gradient(135deg,#d0b8f0,#7040b0)">
+        <span class="pj-em">🌐</span>
+        <div class="pj-ov">
+          <div class="pj-lr">
+            <a href="https://mediavault-swart.vercel.app/" target="_blank" class="pj-lk">Live →</a>
+          </div>
+        </div>
+      </div>
+      <div class="pj-info">
+        <div class="pj-type">Personal · ⭐1</div>
+        <div class="pj-nm">MediaVault</div>
+        <p class="pj-ds">A modern full-stack platform to upload, manage, and share media files with ease.</p>
+        <div class="pj-stk">
+          <span class="pj-tg">Next.js</span>
+          <span class="pj-tg">Tailwind CSS</span>
+          <span class="pj-tg">Node.js</span>
+          <span class="pj-tg">MongoDB</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════════
+     ⑥ CONTACT SECTION — Get In Touch & Social Connection Points
+════════════════════════════════════════════════════════════════════════════ -->
+<section id="contact">
+
+  <div class="orb orb-xl  orb-lavender" style="top:40px;    right:60px;  animation:f3 9s  ease-in-out infinite"></div>
+  <div class="orb orb-lg  orb-pink"     style="bottom:60px; left:80px;   animation:f1 7s  ease-in-out infinite 2s"></div>
+  <div class="orb orb-md  orb-cream"    style="top:160px;   left:200px;  animation:f4 8s  ease-in-out infinite 0.5s"></div>
+  <div class="orb orb-sm  orb-orange"   style="bottom:200px;right:200px; animation:f6 6s  ease-in-out infinite 3s"></div>
+  <div class="orb orb-xs  orb-sky"      style="top:240px;   right:350px; animation:f5 10s ease-in-out infinite 1s"></div>
+  <div class="orb orb-xs  orb-green"    style="bottom:140px;left:400px;  animation:f2 8s  ease-in-out infinite 2.5s"></div>
+
+  <div class="ct-c rev">
+    <p class="sec-lbl lbl-p" style="justify-content:center">Let's Talk</p>
+    <h2 class="sec-h">
+      Have a project?<br>
+      <em class="em-p">Let's build it.</em>
+    </h2>
+
+    <div class="ct-card">
+      <p style="font-size:0.97rem; line-height:1.8; color:#5a4a6a">
+        Whether you need a complete web application, want to collaborate on
+        an open-source project, or just want to say hello —
+        I'm always open to exciting opportunities.
+      </p>
+
+
+      <div class="ct-row">
+        <div class="ct-it"><span>📍</span><span>India</span></div>
+        <div class="ct-it"><span>🌐</span><span>github.com/Samar-Agneev</span></div>
+        <div class="ct-it"><span>💼</span><span>Available Now</span></div>
+      </div>
+
+      <a href="mailto:samaragneev@gmail.com" class="btn-dark" style="display:inline-block; margin-top:12px">
+        Send Message ✉️
+      </a>
+
+      <div class="soc-row">
+        <!-- GitHub -->
+        <a href="https://github.com/Samar-Agneev" target="_blank" class="soc" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58
+              0-.29-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76
+              -1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.49 1
+              .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22
+              -.14-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13
+              3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91
+              1.24 3.22 0 4.61-2.81 5.63-5.48 5.93.43.37.82 1.1.82 2.22 0 1.6-.01 2.9-.01
+              3.29 0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/samaragneev" target="_blank" class="soc" title="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13
+              2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27
+              5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12
+              20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24
+              1.77 24h20.45C23.21 24 24 23.23 24 22.27V1.73C24 .77 23.21 0 22.22 0z"/>
+          </svg>
+        </a>
+        <!-- Portfolio -->
+        <a href="https://samar-agneev.github.io/WebNova" target="_blank" class="soc" title="Portfolio">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1
+              17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9
+              -2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45
+              1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════════════════════
+     FOOTER — Copyright & Navigation Links
+════════════════════════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="f-logo">✦ Samar.</div>
+  <p class="f-copy">© 2026 · Crafted with ❤️ by Samar Agneev</p>
+  <div class="f-links">
+    <a href="https://github.com/Samar-Agneev" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/samaragneev" target="_blank">LinkedIn</a>
+    <a href="mailto:samaragneev@gmail.com">Email</a>
+  </div>
+</footer>
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
